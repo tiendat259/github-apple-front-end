@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, innitial-scale=1.0, minimum-scale=1.0" />
+    <title>Apple</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/icons/icon.png" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list nav-list-mobile">
+                    <li class="nav-item">
+                        <div class="mobile-menu">
+                            <span class="line line-top"></span>
+                            <span class="line line-bottom"></span>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Apple.html" class="nav-link nav-link-apple"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link nav-link-bag"></a>
+                    </li>
+                </ul>
+                <!--/.nav-list nav-list-mobile-->
+                <ul class="nav-list nav-list-larger">
+                    <li class="nav-item nav-item-hidden">
+                        <a href="Apple.html"><i class="nav-link nav-link-apple"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Mac</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">iPad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">iPhone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Watch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" id="search"><i class="nav-link nav-link-search"></i></a>
+                    </li>
+                    <li class="nav-item nav-item-hidden">
+                        <a href="#"><i class="nav-link nav-link-bag"></i></a>
+                    </li>
+                </ul>
+                <!--/.nav-list nav-list-larger-->
+                <div class="search-form">
+                    <form>
+                        <input type="text" name="" placeholder="Search..." />
+                    </form>
+                    <a class="close"><i class="fa fa-times"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--/header-->
+    <section class="hero iphone-11-pro">
+        <div class="container">
+            <div class="title">
+                <h2 class="title-heading">iPhone 11 Pro</h2>
+                <h3 class="title-sub-heading">Pro camera. Pro display. Pro performance.</h3>
+                <p class="title-price">From $24.95/mo. or $599 with trade in. *</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link">Learn more</a>
+                <a href="#" class="cta-link">Buy</a>
+            </div>
+        </div>
+    </section>
+    <!--/section iPhone-11-Pro-->
+    <section class="hero iphone-11">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading">iPhone 11</h2>
+                <h3 class="title-sub-heading">Just the right amount of everything.</h3>
+                <p class="title-price">From $16.62/mo. or $399 with trade in. *</p>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn more</a>
+                <a href="#" class="cta-link cta-link-darker">Buy</a>
+            </div>
+        </div>
+    </section>
+    <!--/section iPhone-11-->
+    <section class="hero watch">
+        <div class="container">
+            <div class="title title-dark">
+                <h2 class="title-heading-watch"></h2>
+                <h3 class="title-sub-heading">
+                    With the new always-On Retina display. <br />
+                    You've never seen a watch like this.
+                </h3>
+            </div>
+            <div class="cta">
+                <a href="#" class="cta-link cta-link-darker">Learn more</a>
+                <a href="#" class="cta-link cta-link-darker">Buy</a>
+            </div>
+        </div>
+    </section>
+    <!--/section watch-->
+    <form class="form">
+        <h2>Order</h2>
+        <div class="row">
+            <div class="col-25">
+                <label for="Name">Name:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="txtName" name="txtName" placeholder="Your name..." onblur="checkName()">
+                <p id="errName"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="email">Email:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="txtEmail" name="txtEmail" placeholder="Your email..." onblur="checkEmail()">
+                <p id="errEmail"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="Phone">Phone:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="txtPhone" name="txtPhone" placeholder="Your phone..." onblur="checkPhone()">
+                <p id="errPhone"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="address">Address:</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="txtAddress" name="txtAddress" placeholder="Your address..." onblur="checkAddress()">
+                <p id="errAddress"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="device">Device:</label>
+            </div>
+            <div class="col-75">
+                <select id="device" name="device">
+                    <option value="iphone">Iphone</option>
+                    <option value="ipad">Ipad</option>
+                    <option value="macbook">Macbook</option>
+                    <option value="watch">Apple Watch</option>
+                    <option value="airpods">Airpods</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="capacity">Capacity:</label>
+            </div>
+            <div class="col-75">
+                <div class="col-75">
+                    <select id="capacity" name="capacity">
+                        <option value="32gb">32GB</option>
+                        <option value="64gb">64GB</option>
+                        <option value="128gb">128GB</option>
+                        <option value="256gb">256GB</option>
+                        <option value="512gb">512GB</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="note">Note:</label>
+            </div>
+            <div class="col-75">
+                <textarea id="txtNote" name="txtNote" placeholder="Write something.." onblur="checkNote()" style="height:200px"></textarea>
+                <p id="errNote"></p>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Send Your Order">
+        </div>
+    </form>
+    <!--/form-->
+    <footer>
+        <div style="background-color:aquamarine; width: 100%">
+            BÀI THU HOẠCH: THIẾT KẾ WEBSITE
+            <br />
+            Sinh viên thực hiện: Ngô Tiến Đạt - 1721050353
+        </div>
+    </footer>
+    <!--/End-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        /* active mobile menu */
+        const selectElement = (element) => document.querySelector(element);
+        selectElement('.mobile-menu').addEventListener('click', () => {
+            selectElement('header').classList.toggle('active');
+        })
+        /* active-hide search */
+        $(document).ready(function () {
+            $('#search').click(function () {
+                $('.nav-link').addClass('hide-item')
+                $('.search-form').addClass('active')
+                $('.close').addClass('active')
+                $('#search').hide()
+            })
+            $('.close').click(function () {
+                $('.nav-link').removeClass('hide-item')
+                $('.search-form').removeClass('active')
+                $('.close').removeClass('active')
+                $('#search').show()
+            })
+        })
+        /* check name */
+        function checkName() {
+            var name = document.getElementById('txtName').value;
+            if (name != '') {
+                document.getElementById('errName').style.color = '';
+                document.getElementById('txtName').style.borderColor = '';
+                document.getElementById('txtName').style.backgroundColor = '';
+                document.getElementById('errName').innerHTML = '';
+                if (name.length < 5) {
+                    document.getElementById('errName').style.color = 'red';
+                    document.getElementById('txtName').style.borderColor = 'red';
+                    document.getElementById('txtName').style.backgroundColor = 'white';
+                    document.getElementById('errName').innerHTML = '*Invalid name';
+                }
+            }
+            else {
+                document.getElementById('errName').style.color = 'red';
+                document.getElementById('txtName').style.borderColor = 'red';
+                document.getElementById('txtName').style.backgroundColor = 'white';
+                document.getElementById('errName').innerHTML = '*Please enter your mame';
+            }
+        }
+        /* check email */
+        function checkEmail() {
+            var email = document.getElementById('txtEmail').value;
+            if (email != '') {
+                document.getElementById('errEmail').innerHTML = '';
+                document.getElementById('errEmail').style.color = '';
+                document.getElementById('txtEmail').style.borderColor = '';
+                document.getElementById('txtEmail').style.backgroundColor = '';
+
+                if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email) == false) {
+                    document.getElementById('errEmail').style.color = 'red';
+                    document.getElementById('txtEmail').style.borderColor = 'red';
+                    document.getElementById('txtEmail').style.backgroundColor = 'white';
+                    document.getElementById('errEmail').innerHTML = '*Invalid email address';
+                }
+            } else {
+                document.getElementById('errEmail').style.color = 'red';
+                document.getElementById('txtEmail').style.borderColor = 'red';
+                document.getElementById('txtEmail').style.backgroundColor = 'white';
+                document.getElementById('errEmail').innerHTML = '*Please enter your email';
+            }
+        }
+        /* check phone */
+        function checkPhone() {
+            var phone = document.getElementById('txtPhone').value;
+            if (phone != '') {
+                document.getElementById('errPhone').innerHTML = '';
+                document.getElementById('errPhone').style.color = '';
+                document.getElementById('txtPhone').style.borderColor = '';
+                document.getElementById('txtPhone').style.backgroundColor = '';
+
+                if (/^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/.test(phone) == false) {
+                    document.getElementById('errPhone').style.color = 'red';
+                    document.getElementById('txtPhone').style.borderColor = 'red';
+                    document.getElementById('txtPhone').style.backgroundColor = 'white';
+                    document.getElementById('errPhone').innerHTML = '*Invalid phone number';
+                }
+            } else {
+                document.getElementById('errPhone').style.color = 'red';
+                document.getElementById('txtPhone').style.borderColor = 'red';
+                document.getElementById('txtPhone').style.backgroundColor = 'white';
+                document.getElementById('errPhone').innerHTML = '*Please enter your phone number';
+            }
+        }
+        /* check address */
+        function checkAddress() {
+            var subject = document.getElementById('txtAddress').value;
+            if (subject != '') {
+                document.getElementById('errAddress').innerHTML = '';
+                document.getElementById('errAddress').style.color = '';
+                document.getElementById('txtAddress').style.borderColor = '';
+                document.getElementById('txtAddress').style.backgroundColor = '';
+            } else {
+                document.getElementById('errAddress').style.color = 'red';
+                document.getElementById('txtAddress').style.borderColor = 'red';
+                document.getElementById('txtAddress').style.backgroundColor = 'white';
+                document.getElementById('errAddress').innerHTML = '*Please enter your address';
+            }
+        }
+        /* check note */
+        function checkNote() {
+            var message = document.getElementById('txtNote').value;
+            if (message != '') {
+                document.getElementById('errNote').innerHTML = '';
+                document.getElementById('errNote').style.color = '';
+                document.getElementById('txtNote').style.borderColor = '';
+                document.getElementById('txtNote').style.backgroundColor = '';
+            } else {
+                document.getElementById('errNote').style.color = 'red';
+                document.getElementById('txtNote').style.borderColor = 'red';
+                document.getElementById('txtNote').style.backgroundColor = 'white';
+                document.getElementById('errNote').innerHTML = '*Please enter note';
+            }
+        }
+    </script>
+</body>
+</html>
